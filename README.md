@@ -2,11 +2,22 @@
 img caption compiler for markdown.
 
 _requires jQuery_
-### setup
-1. add jquery
-`<script src="jquery.js" type="text/javascript"></script>`
-2. add showup.js
-`<script src="jquery.showup.js" type="text/javascript"></script>`
-### How to
-1. when editing your img add `!showup//whatever you please//!` to your alt
-2. run showup.js in the parent of the img. `$("section.body").showup();`
+
+for html:
+`<img alt="!showup//say whatever you want!//!a cat gif" src="cat.gif">`
+
+
+for markdown: `![!showup//say whatever you want!//!a cat gif](cat.gif)`
+
+Compiled:
+
+```
+<div class="showup-parent">
+  <img alt="a cat gif" src="cat.gif">
+  <p>say whatever you want!</p>
+</div>
+```
+_if no showup code is detected the image is skipped **like so**._
+```
+<img alt="a dog gif" src="dog.gif">
+```
