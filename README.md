@@ -3,11 +3,14 @@ img caption compiler for markdown.
 
 _requires jQuery_
 
-for html:
+#### for html:
+
 `<img alt="!showup//say whatever you want!//!a cat gif" src="cat.gif">`
 
 
-for markdown: `![!showup//say whatever you want!//!a cat gif](cat.gif)`
+#### for markdown:
+
+`![!showup//say whatever you want!//!a cat gif](cat.gif)`
 
 Compiled:
 
