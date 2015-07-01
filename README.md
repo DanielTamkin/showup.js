@@ -1,5 +1,5 @@
 # showup.js
-img caption compiler for markdown.
+a simple jQuery plugin to compile img captions for markdown.
 
 _requires jQuery_
 
