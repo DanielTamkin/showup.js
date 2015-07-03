@@ -2,6 +2,11 @@
 a simple jQuery plugin to compile img captions for markdown.
 
 _requires jQuery_
+```
+<script>
+  $("section.images-here").showup();
+</script>
+```
 
 #### for html:
 
