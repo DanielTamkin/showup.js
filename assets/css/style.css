@@ -43,22 +43,63 @@ p a{
   section.content a{
     font-weight:600;
   }
-/*> hero*/
-  #site-hero{
+/*> shim*/
+  #site-shim{
     background:#111;
-    height:100%;
+    min-height:460px;
+    max-height:600px;
+    height:61%;
     width:100%;
     position:relative;
   }
-  #site-hero header{
-    color:#fff;
+  #site-shim header{
+    text-align:right;
+    font-size:1.4em;
+  }
+/*> body*/
+  #site-body{
+    z-index:9999;
+  }
+  #site-body aside{
+    padding:1em;
+    width:35%;
+    box-sizing:border-box;
+    float:left;
+    /*background:rgb(149, 207, 85);*/
     text-align:center;
   }
-  #site-hero header h1{
-    margin:0.2em 0;
-    font-size:4em;
-    font-weight:900;
+  #site-body section.body{
+    padding:1em;
+    width:65%;
+    box-sizing:border-box;
+    float:left;
+    /*background:rgb(15, 55, 102);*/
+    line-height:1.6;
   }
-  #site-hero header ul li{
-    margin:0 0.6em;
+  #site-body section.card{
+    width:260px;
+    display:inline-block;
+    background:#fff;
+    box-shadow: 0px -1px 4px 1px rgba(20, 20, 20, 0.4);
+    line-height:1.6;
+  }
+  #site-body section.card hr{
+    margin:0 auto;
+    margin-bottom:11px;
+    width:90px;
+    border:none;
+    border:1px solid rgba(47, 117, 104, 0.34);
+  }
+  #site-body section.card header{
+    height:210px;
+    width:100%;
+    background:rgb(47, 117, 104);
+  }
+  #site-body section.card section.tag{
+    padding:0.5em;
+    padding-top:1em;
+    box-sizing:border-box;
+  }
+  #site-body section.body {
+
   }
