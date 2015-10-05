@@ -1,0 +1,64 @@
+body{
+  background:#fff;
+  color:#273a34;
+  font-family:'WorkSans';
+}
+::-moz-selection { /* Code for Firefox */
+  color: #222;
+  background: #619dba;
+}
+::selection {
+    color: #222;
+    background: #619dba;
+}
+a{
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+a:hover{
+  color:#746969;
+  -webkit-transition: all 100ms ease-in-out;
+  -moz-transition: all 100ms ease-in-out;
+  -ms-transition: all 100ms ease-in-out;
+  -o-transition: all 100ms ease-in-out;
+  transition: all 100ms ease-in-out;
+}
+p a{
+  padding:1px 3px;
+  background:#fff;
+  box-sizing:border-box;
+  color:#201919;
+}
+/*> generals / contents*/
+  section.content h1{
+    margin-bottom:0.6em;
+    font-family:'Lato';
+  }
+  section.content p{
+    line-height:1.4;
+  }
+  section.content a{
+    font-weight:600;
+  }
+/*> hero*/
+  #site-hero{
+    background:#111;
+    height:100%;
+    width:100%;
+    position:relative;
+  }
+  #site-hero header{
+    color:#fff;
+    text-align:center;
+  }
+  #site-hero header h1{
+    margin:0.2em 0;
+    font-size:4em;
+    font-weight:900;
+  }
+  #site-hero header ul li{
+    margin:0 0.6em;
+  }
