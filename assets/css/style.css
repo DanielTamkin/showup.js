@@ -100,10 +100,14 @@ p a{
     width:65%;
     float:left;
   }
-  #site-body section.body{
+  #site-body section.left section.body{
     margin:1em 0;
     /*background:rgb(15, 55, 102);*/
     line-height:1.6;
+  }
+
+  #site-body section.left section.body p{
+    margin:0.6em 0;
   }
   #site-body section.left header{
     margin-bottom:1em;
@@ -114,6 +118,10 @@ p a{
   #site-body section.left header h1{
     font-size:6em;
     font-weight:900;
+  }
+  #site-body section.left header p{
+    margin:6px 9px;
+    opacity:0.6;
   }
   #site-body section.left header ul{
     margin:1em 0;
