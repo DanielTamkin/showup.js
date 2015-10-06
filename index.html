@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>shopup.js - a caption compiler // by Daniel Tamkin</title>
+  <title>showpup.js - a caption compiler // by Daniel Tamkin</title>
   <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
@@ -28,13 +28,29 @@
     </section>
 
   </aside>
-  <section class="body">
-    <h1>Some text</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+  <section class="left">
+    <header>
+      <h1>showup.js</h1>
+      <ul>
+        <li class="ghostb-grey">github</li>
+        <li class="ghostb-blue">git clone </li>
+      </ul>
+    </header>
+    <section class="body">
+      <h1>Some text</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
   </section>
 </div>
 <script>
+  $shim = $("#site-shim").height()/2.6;
+  $("#site-body section.left header").height($shim+"px");
+  $offset = $("#site-body section.left header").outerHeight();
   $("#site-shim .center").centerThis();
+  $("#site-body").shimThis({
+    ontop: '#site-shim',
+    offset: $offset+'px'
+  });
 </script>
 </body>
 </html>

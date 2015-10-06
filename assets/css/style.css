@@ -50,6 +50,7 @@ p a{
     max-height:600px;
     height:61%;
     width:100%;
+    z-index:116;
     position:relative;
   }
   #site-shim header{
@@ -58,7 +59,8 @@ p a{
   }
 /*> body*/
   #site-body{
-    z-index:9999;
+    z-index:117;
+    position:relative;
   }
   #site-body aside{
     padding:1em;
@@ -67,14 +69,6 @@ p a{
     float:left;
     /*background:rgb(149, 207, 85);*/
     text-align:center;
-  }
-  #site-body section.body{
-    padding:1em;
-    width:65%;
-    box-sizing:border-box;
-    float:left;
-    /*background:rgb(15, 55, 102);*/
-    line-height:1.6;
   }
   #site-body section.card{
     width:260px;
@@ -91,15 +85,41 @@ p a{
     border:1px solid rgba(47, 117, 104, 0.34);
   }
   #site-body section.card header{
-    height:210px;
+    height:260px;
     width:100%;
     background:rgb(47, 117, 104);
   }
   #site-body section.card section.tag{
-    padding:0.5em;
-    padding-top:1em;
+    padding:1em;
+    padding-bottom:1.1em;
     box-sizing:border-box;
   }
-  #site-body section.body {
-
+  #site-body section.left{
+    padding:1em;
+    box-sizing:border-box;
+    width:65%;
+    float:left;
+  }
+  #site-body section.body{
+    margin:1em 0;
+    /*background:rgb(15, 55, 102);*/
+    line-height:1.6;
+  }
+  #site-body section.left header{
+    margin-bottom:1em;
+    padding:1em 0;
+    box-sizing:border-box;
+    color:#fff;
+  }
+  #site-body section.left header h1{
+    font-size:6em;
+    font-weight:900;
+  }
+  #site-body section.left header ul{
+    margin:1em 0;
+    text-align:left;
+  }
+  #site-body section.left header ul li{
+    margin:6px 9px;
+    display:inline-block;
   }
