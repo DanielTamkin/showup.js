@@ -65,7 +65,12 @@ body{/*font-family: 'Montserrat', sans-serif;*/}
 			-o-transition: all 100ms ease-in-out;
 			transition: all 100ms ease-in-out;
 		}
-	.ghostb-blue{padding:4px 11px;box-sizing:border-box;border:2px solid #4773d6;border-radius:12px;display:inline-block;color:#fff;
+	.ghostb-blue{padding:4px 11px;
+		box-sizing:border-box;
+		border:2px solid #4773d6;
+		border-radius:12px;
+		display:inline-block;
+		color:#fff;
 		text-transform:;
 		background:#4773d6;
 		font-family:'Lato-Bold';
@@ -78,6 +83,35 @@ body{/*font-family: 'Montserrat', sans-serif;*/}
 		.ghostb-blue:hover{background:#6e92e4;
 			border:2px solid #6e92e4;
 			color:#fff;
+			cursor:pointer;
+			-webkit-transition: all 100ms ease-in-out;
+			-moz-transition: all 100ms ease-in-out;
+			-ms-transition: all 100ms ease-in-out;
+			-o-transition: all 100ms ease-in-out;
+			transition: all 100ms ease-in-out;
+		}
+	.ghostb-cmd{
+		padding:4px 11px;
+		padding-right:16px;
+		box-sizing:border-box;
+		border:2px solid #242a38;
+		border-radius:4px;
+		display:inline-block;
+		color:#959595;
+		background:#242a38;
+		text-align:left!important;
+		font-family:'Lato-Bold';
+		-webkit-transition: all 100ms ease-in-out;
+		-moz-transition: all 100ms ease-in-out;
+		-ms-transition: all 100ms ease-in-out;
+		-o-transition: all 100ms ease-in-out;
+		transition: all 100ms ease-in-out;
+	}
+	.ghostb-cmd span{color:#4fb165;text-decoration:underline;}
+		.ghostb-cmd:hover{
+			background:#242a38;
+			border:2px solid #242a38;
+			color:#959595;
 			cursor:pointer;
 			-webkit-transition: all 100ms ease-in-out;
 			-moz-transition: all 100ms ease-in-out;
