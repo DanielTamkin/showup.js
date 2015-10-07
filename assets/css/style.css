@@ -71,6 +71,7 @@ p a{
     text-align:center;
   }
   #site-body section.card{
+    margin:0.6em 0;
     width:260px;
     display:inline-block;
     background:#fff;
@@ -134,3 +135,4 @@ p a{
     margin:6px 9px;
     display:inline-block;
   }
+/*>*/

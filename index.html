@@ -16,6 +16,7 @@
 
 </div>
 <div id="site-body" class="Container-Medium">
+
   <aside>
     <section class="card">
       <!-- <img src="assets/img/"/> -->
@@ -27,7 +28,6 @@
         <p>A little Description to describe the plugin</p>
       </section>
     </section>
-
   </aside>
   <section class="left">
     <header>
@@ -60,9 +60,9 @@
       </p>
       <code class="code atom full">
 <pre>
-&lt;script&gt;
+  &lt;script&gt;
   <span>$(&quot;section.images-here&quot;).showup();</span>
-&lt;/script&gt;
+  &lt;/script&gt;
 </pre>
       </code>
       <p>
@@ -88,11 +88,52 @@
         ![<span>!showup//say whatever you want!//!</span>a cat gif](cat.gif)
       </code>
   </section>
+</section>
+  <aside>
+    <section class="card">
+      <!-- <img src="assets/img/"/> -->
+      <header>
+
+      </header>
+      <section class="tag">
+        <hr/>
+        <p>A dog photo</p>
+      </section>
+    </section>
+  </aside>
+  <section class="left">
+    <section class="body">
+      <h1>Do not fear.</h1>
+      <p>
+        If the compiler finds an image with no showup code, do not fear!
+        it will not compile it, so code like:
+      </p>
+      <code class="code atom full">
+        &lt;img alt=&quot;a dog gif&quot; src=&quot;dog.gif&quot;&gt;
+      </code>
+      <p>
+        will be un-touched.
+      </p>
+      <h2>Also,</h2>
+      <p>
+        if the compiler detects that you didnt end the
+        showup code( as you should with <code class="code atom">//!</code>) The beginning
+        tag(<code class="code atom">showup!//</code>) will be taken out, so to recover your alt tag's data as much as it can.
+      </p>
+    </section>
+  </section>
 </div>
+<footer id="site-footer">
+  <div class="Container-Large">
+    <p>
+      showup.js is made by danieltamkin, a young web designer and photographer from canada.
+    </p>
+  </div>
+</footer>
 <script>
-  $shim = $("#site-shim").height()/2.6;
-  $("#site-body section.left header").height($shim+"px");
-  $offset = $("#site-body section.left header").outerHeight();
+  $shim = $("#site-shim").height()/2.4;
+  $("#site-body section.left header").first().height($shim+"px");
+  $offset = $("#site-body section.left header").first().outerHeight();
   $("#site-shim .center").centerThis();
   $("#site-body").shimThis({
     ontop: '#site-shim',
