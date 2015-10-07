@@ -120,15 +120,26 @@ body{/*font-family: 'Montserrat', sans-serif;*/}
 			transition: all 100ms ease-in-out;
 		}
 /*code*/
-	code.code.atom{
+	code.code{
+		padding:1px 4px;
+	}
+	code.code.full{
 		width:100%;
-		box-sizing:border-box;
-		border:2px solid #31343d;
-		border-radius:4px;
+	}
+	code.code.atom{
 		display:inline-block;
 		background:#31343d;
-		color:#9899a7;
+		border-radius:4px;
+		color:#687073;
 		font-family:'Lato';
+	}
+	code.code.atom.full{
+		padding:4px 11px;
+		box-sizing:border-box;
+		border:2px solid #31343d;
+	}
+	code.code.atom span{
+		color:#9899a7;
 	}
 /*Social icons*/
 	section.social{font-family: 'Socicon';}

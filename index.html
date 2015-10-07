@@ -42,20 +42,51 @@
       <h1>Install</h1>
       <div class="ghostb-cmd">git clone <span>git://github.com/DanielTamkin/shimThis.js.git</span></div>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
+        showup.js is a stupid simple plugin that solves a problem
+        i found with <a href="http://ghost.org">ghost</a>, you can't
+        caption photos on your post.
+        This handy-dandy jQuery reliant plugin fixes that.
+        Just plop in this bit of code into your image code, like so:
       </p>
-      <h1>the html</h1>
-      <code class="code atom">
-        <pre class="wrapper">
-
-            &lt;div class=&quot;showup-parent&quot;&gt;
-              &lt;img alt=&quot;a cat gif&quot; src=&quot;cat.gif&quot;&gt;
-              &lt;p&gt;say whatever you want!&lt;/p&gt;
-            &lt;/div&gt;
-        </pre>
+      <code class="code atom full">
+        &lt;img alt=&quot;<span>!showup//say whatever you want!//!</span>a cat gif&quot; src=&quot;cat.gif&quot;&gt;
       </code>
-    </section>
+      <p>
+        notice the "!showup//" and "//!" in the alt tag, these are starting and ending tags for
+        showup, anything between these tags will be your caption. Once you've done that,
+        lets get you running the compiler. </br>
+        Its super easy, target the element that will have
+        the <code class="code atom">&lt;<span>img</span>&gt;</code> in it. Like this:
+      </p>
+      <code class="code atom full">
+<pre>
+&lt;script&gt;
+  <span>$(&quot;section.images-here&quot;).showup();</span>
+&lt;/script&gt;
+</pre>
+      </code>
+      <p>
+        Awesome, now when you run the page the line where you have you image will be replaced with this:
+      </p>
+      <code class="code atom full">
+<pre>
+  &lt;div class=&quot;<span>showup-parent</span>&quot;&gt;
+    &lt;img alt=&quot;a cat gif&quot; src=&quot;cat.gif&quot;&gt;
+    &lt;p&gt;<span>say whatever you want!</span>&lt;/p&gt;
+  &lt;/div&gt;
+</pre>
+      </code>
+      <p>
+        There you go! a super simple complier to get some cool captions out of your work.
+      </p>
+      <h2>ps...</h2>
+      <p>
+        if your like me and want to have captions for say <a href="http://ghost.org">ghost</a>,
+        or anything to do with markdown. The code is the exact same, so there is no way to screw up.
+      </p>
+      <code class="code atom full">
+        ![<span>!showup//say whatever you want!//!</span>a cat gif](cat.gif)
+      </code>
   </section>
 </div>
 <script>

@@ -1,0 +1,15 @@
+<h2>the html</h2>
+<code class="code atom">
+  <pre class="wrapper">
+
+      &lt;img alt=&quot;!showup//say whatever you want!//!a cat gif&quot; src=&quot;cat.gif&quot;&gt;
+  </pre>
+</code>
+<h2>the markdown</h2>
+<code class="code atom">
+  <pre class="wrapper">
+
+      ![!showup//say whatever you want!//!a cat gif](cat.gif)
+  </pre>
+</code>
+</section>
