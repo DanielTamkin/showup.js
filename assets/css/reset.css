@@ -119,6 +119,17 @@ body{/*font-family: 'Montserrat', sans-serif;*/}
 			-o-transition: all 100ms ease-in-out;
 			transition: all 100ms ease-in-out;
 		}
+/*code*/
+	code.code.atom{
+		width:100%;
+		box-sizing:border-box;
+		border:2px solid #31343d;
+		border-radius:4px;
+		display:inline-block;
+		background:#31343d;
+		color:#9899a7;
+		font-family:'Lato';
+	}
 /*Social icons*/
 	section.social{font-family: 'Socicon';}
 	section.social .twitter{color:#55acee;}
