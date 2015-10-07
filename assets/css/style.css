@@ -19,7 +19,7 @@ a{
   transition: all 100ms ease-in-out;
 }
 a:hover{
-  color:#746969;
+  background:rgba(92, 131, 150, 0.9);
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
   -ms-transition: all 100ms ease-in-out;
@@ -28,7 +28,7 @@ a:hover{
 }
 p a{
   padding:1px 3px;
-  background:#fff;
+  background:rgba(92, 131, 150, 0.63);
   box-sizing:border-box;
   color:#201919;
 }
@@ -61,6 +61,7 @@ p a{
   #site-body{
     z-index:117;
     position:relative;
+    background:rgb(125, 2, 83);
   }
   #site-body aside{
     padding:1em;
@@ -135,4 +136,14 @@ p a{
     margin:6px 9px;
     display:inline-block;
   }
-/*>*/
+/*> footer*/
+  #site-footer{
+    margin-top:1em;
+    padding:4em 0;
+    width:100%;
+    z-index:119;
+    text-align:center;
+    line-height:1.4;
+    background:#fff;
+    opacity:0.6;
+  }

@@ -1,5 +1,3 @@
-
-
 <h2>the html</h2>
 <code class="code atom">
   <pre class="wrapper">
@@ -14,4 +12,3 @@
       ![!showup//say whatever you want!//!a cat gif](cat.gif)
   </pre>
 </code>
-</section>

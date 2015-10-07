@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>showpup.js - a caption compiler // by Daniel Tamkin</title>
+  <title>showup.js - a caption compiler // by Daniel Tamkin</title>
   <link rel="stylesheet" type="text/css" href="assets/fonts/fonts.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
   <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
@@ -12,11 +12,10 @@
   <script type="text/javascript" src="showup.js"></script>
 </head>
 <body>
-<div id="site-shim" style="background: url('assets/img/hero-shoreside.jpg') no-rep!eat bottom center fixed; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;">
+<div id="site-shim">
 
 </div>
 <div id="site-body" class="Container-Medium">
-
   <aside>
     <section class="card">
       <!-- <img src="assets/img/"/> -->
@@ -59,22 +58,18 @@
         the <code class="code atom">&lt;<span>img</span>&gt;</code> in it. Like this:
       </p>
       <code class="code atom full">
-<pre>
-  &lt;script&gt;
-  <span>$(&quot;section.images-here&quot;).showup();</span>
-  &lt;/script&gt;
-</pre>
+        <pre>&lt;script&gt;
+          <span>$(&quot;section.images-here&quot;).showup();</span>
+          &lt;/script&gt;</pre>
       </code>
       <p>
         Awesome, now when you run the page the line where you have you image will be replaced with this:
       </p>
       <code class="code atom full">
-<pre>
-  &lt;div class=&quot;<span>showup-parent</span>&quot;&gt;
-    &lt;img alt=&quot;a cat gif&quot; src=&quot;cat.gif&quot;&gt;
-    &lt;p&gt;<span>say whatever you want!</span>&lt;/p&gt;
-  &lt;/div&gt;
-</pre>
+        <pre>&lt;div class=&quot;<span>showup-parent</span>&quot;&gt;
+            &lt;img alt=&quot;a cat gif&quot; src=&quot;cat.gif&quot;&gt;
+            &lt;p&gt;<span>say whatever you want!</span>&lt;/p&gt;
+          &lt;/div&gt;</pre>
       </code>
       <p>
         There you go! a super simple complier to get some cool captions out of your work.
@@ -122,19 +117,23 @@
       </p>
     </section>
   </section>
+  </section>
 </div>
-<footer id="site-footer">
+
+<div style="clear: both;"></div>
+<div id="site-footer">
   <div class="Container-Large">
     <p>
-      showup.js is made by danieltamkin, a young web designer and photographer from canada.
+      showup.js is made by <a href="http://danieltamkin.com">danieltamkin</a>.</br>
+      He's a young web designer and photographer</br> from Winnipeg, Canada.</br> You should <a href="http://danieltamkin.com">Check him out</a>.
     </p>
   </div>
-</footer>
+</div>
 <script>
   $shim = $("#site-shim").height()/2.4;
+  console.log($("#site-body").height());
   $("#site-body section.left header").first().height($shim+"px");
   $offset = $("#site-body section.left header").first().outerHeight();
-  $("#site-shim .center").centerThis();
   $("#site-body").shimThis({
     ontop: '#site-shim',
     offset: $offset+'px'
