@@ -18,7 +18,7 @@ a{
   -o-transition: all 100ms ease-in-out;
   transition: all 100ms ease-in-out;
 }
-a:hover{
+p a:hover{
   background:rgba(92, 131, 150, 0.9);
   -webkit-transition: all 100ms ease-in-out;
   -moz-transition: all 100ms ease-in-out;
