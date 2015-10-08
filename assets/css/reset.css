@@ -122,6 +122,7 @@ body{/*font-family: 'Montserrat', sans-serif;*/}
 /*code*/
 	code.code{
 		padding:1px 4px;
+		text-align:left;
 	}
 	code.code.full{
 		width:100%;
